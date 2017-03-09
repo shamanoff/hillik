@@ -49,67 +49,7 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+@import "global";
 @import '../../vendors/Swiper-3.3.1/dist/css/swiper';
+//@import '../../vendors/Swiper-3.3.1/dist/css/global';
 
-$red: #a51619;
-$gray_bg: #e6e6e6;
-$blue: #0d4680;
-$black: #141414;
-
-//header
-.line{
-  height: 1rem;
-  background-color: $gray_bg;
-}
-.top-bar{
-  padding:0px 15px 0px 15px;
-  background-color: #fff;
-}
-.top-bar ul{
-  background-color: transparent;
-}
-.menu{
-  font-family: Trampolina;
-  font-weight:bold;
-  color: $blue;
-  font-size: 1.1rem;
-}
-.menu .active a{
-  background: #ffffff;
-  color: $red;
-  border-bottom: 7px solid $red;
-}
-.wrap_menu{
-  margin: 24px 0px 0px 0px;
-  padding:0px;
-  width:730px;
-}
-@media screen and (max-width: 1199px) {
-
-  .menu {
-    font-family: Trampolina;
-    font-weight: bold;
-    color: $blue;
-    font-size: 1rem;
-  }
-
-  .wrap_menu{
-    margin: 9px 0px 0px 0px;
-    padding:0px;
-    width:550px;
-  }
-}
-@media screen and (max-width: 1019px) {
-
-
-  .wrap_menu{
-    display: none;
-  }
-}
-//end of header
-//slider
-.slider{
-  height:511px;
-  background-color: $gray_bg;
-}
-//end of slider
