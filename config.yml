@@ -58,5 +58,7 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
     - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
     # Paths to your own project code are here
+    - "src/vendors/Swiper-3.3.1/dist/js/swiper.jquery.js"
+    - "src/vendors/Swiper-3.3.1/dist/js/swiper.js"
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
