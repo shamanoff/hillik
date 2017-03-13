@@ -81,8 +81,8 @@ $black: #141414;
 //news
 .content {
   background-color: $gray_bg;
-  padding-top: 30px;
-  height: 597px;
+  padding: 20px 0px 30px 0px;
+  //height: 597px;
 }
 
 .news {
@@ -195,18 +195,19 @@ $black: #141414;
   line-height: 2.5rem;
   //margin-top: 1rem;
 }
-
 //end content
+
 //banners line
 .banner_title {
   color: #fff;
-  padding: 9rem 1rem 1rem 1rem;
+  padding: 30% 1rem 1rem 1rem;
   h3 {
     font-family: Trampolina, serif;
     font-weight: 900;
   }
   p {
     font-family: Trampolina, serif;
+    line-height:1.5rem;
 
   }
 }
@@ -250,7 +251,22 @@ $black: #141414;
 }
 
 .blue_arr {
-  margin-right: 400px;
+  margin-right: 90%;
 }
 
-//endbanners line
+//end banners line
+
+//newsletters
+.newsletters{
+  text-align: center;
+  height:12rem;
+  padding-top:2rem;
+  background-color: #fff;
+
+}
+
+//end newsletters
+//footer
+
+
+//end footer
