@@ -167,13 +167,13 @@
 <!--end banners line-->
 <!--news letters-->
 <div class="row expanded">
-    <div class="large-4 small-12 large-offset-4 columns newsletters">
+    <div class="large-4 small-12 large-offset-4 columns newsletters ">
     <h2>הירשמו לחדשות שלנו</h2>
     <div class="input-group">
         <span class="input-group-label">דוא”ל</span>
         <input class="input-group-field" type="number">
         <div class="input-group-button">
-            <input type="submit" class="button" value="שלח">
+            <input type="submit" class="button" value="שלח" id="n_btn">
         </div>
     </div>
     </div>
@@ -181,20 +181,73 @@
 <!--endnews letters-->
 <!--footer-->
 <div class="row expanded footer">
+    <div class="row">
     <div class="large-3 columns">
-        <h4></h4>
+        <h4>צרו קשר</h4>
+        <div class="line_wr"></div>
         <form action="">
             <input type="text" placeholder="שם:">
             <input type="text" placeholder="דוא”ל:">
-            <input type="text" placeholder="הודעה:">
+            <textarea type="text" placeholder="הודעה:" id="txtr"></textarea>
+            <input type="submit" class="button" value="שלח" id="f_btn">
 
         </form>
     </div>
-    <div class="large-3 columns"></div>
-    <div class="large-3 columns"></div>
-    <div class="large-3 columns"></div>
+    <div class="large-3 hide-for-small-only columns">
+        <h4>תמונות</h4>
+        <div class="line_wr"></div>
+
+        <div class="pictures">
+            <div class="row">
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+                <div class="large-4 columns def_pic"></div>
+            </div>
+        </div>
+    </div>
+    <div class="large-3 hide-for-small-only columns">
+        <h4>תפריט</h4>
+        <div class="line_wr"></div>
+        <ul class="menu vertical f_menu" role="menu">
+            <li><a href="index.html">דף הבית</a></li>
+            <li class="divider"></li>
+            <li><a href="about.html">מי אני</a></li>
+            <li class="divider"></li>
+            <li><a href="speeches.html">נאומים</a></li>
+            <li class="divider"></li>
+            <li><a href="articles.html">מאמרים</a></li>
+            <li class="divider"></li>
+            <li><a href="articles.html">מדיני והסברה</a></li>
+            <li class="divider"></li>
+            <li><a href="communication.html">תקשורת</a></li>
+            <li class="divider"></li>
+            <li><a href="communication.html">כנסת</a></li>
+            <li class="divider"></li>
+            <li><a href="contact.html">צור קשר</a></li>
+        </ul>
+
+    </div>
+    <div class="large-3 columns ">
+        <img id="f-logo" src="../assets/img/bottom_logo.png" height="136" width="264"/>
+    </div>
+    </div>
+</div>
+
+<div class="row expanded bottom_line">
+    <div class="row">
+        <div class="large-12 small-12 columns">
+            <a href="#"><img id="tvuna" src="../assets/img/tvuna_logo.png" height="52" width="212"/></a>
+        </div>
+    </div>
 </div>
 <!--end footer-->
+
 
 
 
