@@ -1,254 +1,318 @@
-<!--site header-->
-<div class="row expanded line"></div>
-<div class="row top-bar">
+<!--startOffCanvas-->
+<div class="off-canvas-wrapper" tabindex="-1">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper tabindex="-1">
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas role="navigation" tabindex="-1">
 
-    <div class="large-2 top-bar-left"><a href="index.html"><img src="../assets/img/logo_avoda.png"/></a></div>
-    <div class="large-7 columns wrap_menu hide-for-small-only">
+            <!-- Close button -->
+            <div>
+                <button class="close-button" aria-label="Close menu" type="button" data-close id="closeHidden" tabindex="-1">
+                    <span aria-hidden="false" tabindex="-1">&times</span>
+                </button>
+            </div>
 
-        <ul class="menu" role="menu">
-            <li class="active"><a href="index.html">דף הבית</a></li>
-            <li class="divider"></li>
-            <li><a href="about.html">מי אני</a></li>
-            <li class="divider"></li>
-            <li><a href="speeches.html">נאומים</a></li>
-            <li class="divider"></li>
-            <li><a href="articles.html">מאמרים</a></li>
-            <li class="divider"></li>
-            <li><a href="articles.html">מדיני והסברה</a></li>
-            <li class="divider"></li>
-            <li><a href="communication.html">תקשורת</a></li>
-            <li class="divider"></li>
-            <li><a href="communication.html">כנסת</a></li>
-            <li class="divider"></li>
-            <li><a href="contact.html">צור קשר</a></li>
-        </ul>
+            <!-- Menu -->
+            <ul class="menu vertical offcanvas_menu" role="menu">
+                <li><a href="index.html">דף הבית</a></li>
+                <li class="divider"></li>
+                <li><a href="about.html">מי אני</a></li>
+                <li class="divider"></li>
+                <li><a href="speeches.html">נאומים</a></li>
+                <li class="divider"></li>
+                <li><a href="articles.html">מאמרים</a></li>
+                <li class="divider"></li>
+                <li><a href="articles.html">מדיני והסברה</a></li>
+                <li class="divider"></li>
+                <li><a href="communication.html">תקשורת</a></li>
+                <li class="divider"></li>
+                <li><a href="communication.html">כנסת</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
 
-    </div>
-    <div class="large-3 top-bar-right"><a href="index.html"><img src="../assets/img/logo_bar.png"/></a></div>
-
-</div>
-<!--end of site header-->
-<!--banner-->
-<!--------------------------------------------->
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide" id="slide_1"></div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-</div>
-
-<!--------------------------------------------->
-
-<!--end of banner-->
-<!--content-->
-
-
-<div class="content">
-
-    <!--
-        <div class="row news">
-            <div class="small-12 large-5 columns"><p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר
-                ניר ברקת, והחזיק בתיק התיירות ותיק
-                קשרי החוץ בעיריית ירושלים.</p></div>
-            <div class="small-12 large-5 columns"><p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר
-                ניר ברקת, והחזיק בתיק התיירות ותיק
-                קשרי החוץ בעיריית ירושלים.</p></div>
-            <div class="small-12 large-2 n-title columns"><h3>חדשות</h3></div>
 
         </div>
-    -->
 
-    <div class="row articles">
-        <div class="large-6 columns small_wrapper">
-            <div class="large-6 columns small_wrapper_column">
+        <div class="off-canvas-content" data-off-canvas-content>
 
-                <div class="small_pic">
-                    <div class="small_pic_title">
-                        <span>מאמרים</span>
-                        <p>חיליק בר נולד ב-1975 בצפת</p>
+            <!--firstEndOffCanvas-->
+
+
+            <!--site header-->
+            <div class="row expanded line"></div>
+
+            <div class="row mobile_top">
+                <img id="logo_bar" src="../assets/img/logo_bar.png"/>
+
+                <img  id="hamburger" src="../assets/img/hamburger.png" data-toggle="offCanvas"/>
+
+                <img id="logo_avoda" src="../assets/img/logo_avoda.png" />
+
+            </div>
+
+            <div class="row top-bar hide-for-small-only">
+
+                <div class="large-2  small-3 top-bar-left"><a href="index.html"><img class="logo_avoda"
+                                                                                     src="../assets/img/logo_avoda.png"/></a>
+                </div>
+                <div class="large-7 columns wrap_menu ">
+
+                    <ul class="menu" role="menu">
+                        <li class="active"><a href="index.html">דף הבית</a></li>
+                        <li class="divider"></li>
+                        <li><a href="about.html">מי אני</a></li>
+                        <li class="divider"></li>
+                        <li><a href="speeches.html">נאומים</a></li>
+                        <li class="divider"></li>
+                        <li><a href="articles.html">מאמרים</a></li>
+                        <li class="divider"></li>
+                        <li><a href="articles.html">מדיני והסברה</a></li>
+                        <li class="divider"></li>
+                        <li><a href="communication.html">תקשורת</a></li>
+                        <li class="divider"></li>
+                        <li><a href="communication.html">כנסת</a></li>
+                        <li class="divider"></li>
+                        <li><a href="contact.html">צור קשר</a></li>
+                    </ul>
+
+                </div>
+                <div class="large-3 small-3 top-bar-right"><a href="index.html"><img class="logo_bar"
+                                                                                     src="../assets/img/logo_bar.png"/></a>
+                </div>
+
+            </div>
+            <!--end of site header-->
+            <!--banner-->
+            <!--------------------------------------------->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" id="slide_1"></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <!--------------------------------------------->
+
+            <!--end of banner-->
+            <!--content-->
+
+
+            <div class="content">
+
+                <!--
+                    <div class="row news">
+                        <div class="small-12 large-5 columns"><p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר
+                            ניר ברקת, והחזיק בתיק התיירות ותיק
+                            קשרי החוץ בעיריית ירושלים.</p></div>
+                        <div class="small-12 large-5 columns"><p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר
+                            ניר ברקת, והחזיק בתיק התיירות ותיק
+                            קשרי החוץ בעיריית ירושלים.</p></div>
+                        <div class="small-12 large-2 n-title columns"><h3>חדשות</h3></div>
+
+                    </div>
+                -->
+
+                <div class="row articles">
+                    <!--<div class="large-6 small-12 columns small_wrapper">-->
+                    <div class="large-3 small-6  columns small_wrapper_column">
+
+                        <div class="small_pic">
+                            <div class="small_pic_title">
+                                <span>מאמרים</span>
+                                <p>חיליק בר נולד ב-1975 בצפת</p>
+                            </div>
+                        </div>
+                        <div class="small_pic">
+                            <div class="small_pic_title">
+                                <span>מאמרים</span>
+                                <p>חיליק בר נולד ב-1975 בצפת</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-3 small-6  columns small_wrapper_column">
+                        <div class="small_pic">
+                            <div class="small_pic_title">
+                                <span>מאמרים</span>
+                                <p>חיליק בר נולד ב-1975 בצפת</p>
+                            </div>
+                        </div>
+                        <div class="small_pic">
+                            <div class="small_pic_title">
+                                <span>מאמרים</span>
+                                <p>חיליק בר נולד ב-1975 בצפת</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                    <div class="large-6 small-12  columns big_pic">
+                        <div class="big_pic_title">
+                            <span>מאמרים</span>
+                            <h2>חיליק בר נולד ב-1975 בצפת לאחת המשפחות</h2>
+                            <a href="#"><img src="../assets/img/red_arr.png" height="28" width="28"
+                                             id="big_pic_arr"/></a>
+                        </div>
                     </div>
                 </div>
-                <div class="small_pic">
-                    <div class="small_pic_title">
-                        <span>מאמרים</span>
-                        <p>חיליק בר נולד ב-1975 בצפת</p>
+
+
+            </div>
+            <!--end of content-->
+            <!--banners line-->
+            <div class="row expanded">
+
+                <div class="large-3 small-12 columns area_wrapper">
+                    <div id="banner_area_4">
+                        <div class="banner_title">
+                            <h3>פעילות פלמנטרית</h3>
+                            <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק
+                                בתיק התיירות
+                                ותיק קשרי החוץ בעיריית ירושלים.</p>
+                            <a href="#"><img src="../assets/img/red_arr.png" height="28" width="28"
+                                             class="blue_arr"/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-3 small-12 columns area_wrapper">
+                    <div id="banner_area_3">
+                        <div class="banner_title">
+                            <h3>פעילות פלמנטרית</h3>
+                            <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק
+                                בתיק התיירות
+                                ותיק קשרי החוץ בעיריית ירושלים.</p>
+                            <a href="#"><img src="../assets/img/blue_arr.png" height="28" width="28" class="blue_arr"/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-3 small-12 columns area_wrapper">
+                    <div id="banner_area_2">
+                        <div class="banner_title">
+                            <h3>פעילות פלמנטרית</h3>
+                            <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק
+                                בתיק התיירות
+                                ותיק קשרי החוץ בעיריית ירושלים.</p>
+                            <a href="#"><img src="../assets/img/red_arr.png" height="28" width="28"
+                                             class="blue_arr"/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="large-3 small-12 columns area_wrapper">
+                    <div id="banner_area_1">
+                        <div class="banner_title">
+                            <h3>פעילות פלמנטרית</h3>
+                            <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק
+                                בתיק התיירות
+                                ותיק קשרי החוץ בעיריית ירושלים.</p>
+                            <a href="#"><img src="../assets/img/blue_arr.png" height="28" width="28" class="blue_arr"/></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--end banners line-->
+            <!--news letters-->
+            <div class="row expanded">
+                <div class="large-6 small-12 large-offset-3 columns newsletters ">
+                    <h2>הירשמו לחדשות שלנו</h2>
+                    <div class="input-group">
+                        <span class="input-group-label">דוא”ל</span>
+                        <input class="input-group-field" type="text">
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="שלח" id="n_btn">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="large-6 columns small_wrapper_column">
-                <div class="small_pic">
-                    <div class="small_pic_title">
-                        <span>מאמרים</span>
-                        <p>חיליק בר נולד ב-1975 בצפת</p>
+            <!--endnews letters-->
+            <!--footer-->
+            <div class="row expanded footer">
+                <div class="row">
+                    <div class="large-3 medium-6 columns">
+                        <h4>צרו קשר</h4>
+                        <div class="line_wr"></div>
+                        <form action="">
+                            <input type="text" placeholder="שם:">
+                            <input type="text" placeholder="דוא”ל:">
+                            <textarea type="text" placeholder="הודעה:" id="txtr"></textarea>
+                            <input type="submit" class="button" value="שלח" id="f_btn">
+
+                        </form>
+                    </div>
+                    <div class="large-3 medium-6 hide-for-small-only columns">
+                        <h4>תמונות</h4>
+                        <div class="line_wr"></div>
+
+                        <div class="pictures">
+                            <div class="row">
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+                                <img class="def_pic" src="../assets/img/def_pic.jpg"/>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-3 medium-6 hide-for-small-only columns">
+                        <h4>תפריט</h4>
+                        <div class="line_wr"></div>
+                        <ul class="menu vertical f_menu" role="menu">
+                            <li><a href="index.html">דף הבית</a></li>
+                            <li class="divider"></li>
+                            <li><a href="about.html">מי אני</a></li>
+                            <li class="divider"></li>
+                            <li><a href="speeches.html">נאומים</a></li>
+                            <li class="divider"></li>
+                            <li><a href="articles.html">מאמרים</a></li>
+                            <li class="divider"></li>
+                            <li><a href="articles.html">מדיני והסברה</a></li>
+                            <li class="divider"></li>
+                            <li><a href="communication.html">תקשורת</a></li>
+                            <li class="divider"></li>
+                            <li><a href="communication.html">כנסת</a></li>
+                            <li class="divider"></li>
+                            <li><a href="contact.html">צור קשר</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="large-3 medium-6 columns ">
+                        <img id="f-logo" src="../assets/img/bottom_logo.png" height="136" width="264"/>
                     </div>
                 </div>
-                <div class="small_pic">
-                    <div class="small_pic_title">
-                        <span>מאמרים</span>
-                        <p>חיליק בר נולד ב-1975 בצפת</p>
+            </div>
+
+            <div class="row expanded bottom_line">
+                <div class="row">
+                    <div class="large-12 small-12 columns">
+                        <a href="#"><img id="tvuna" src="../assets/img/tvuna_logo.png" height="52" width="212"/></a>
                     </div>
                 </div>
             </div>
+            <!--end footer-->
 
-
-        </div>
-        <div class="large-6 columns big_pic">
-            <div class="big_pic_title">
-                <span>מאמרים</span>
-                <h2>חיליק בר נולד ב-1975 בצפת לאחת המשפחות</h2>
-                <a href="#"><img src="../assets/img/red_arr.png" height="28" width="28" id="big_pic_arr"/></a>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-<!--end of content-->
-<!--banners line-->
-<div class="row expanded">
-
-    <div class="large-3 small-12 columns area_wrapper">
-        <div id="banner_area_4">
-            <div class="banner_title">
-                <h3>פעילות פלמנטרית</h3>
-                <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק בתיק התיירות
-                    ותיק קשרי החוץ בעיריית ירושלים.</p>
-                <a href="#"><img src="../assets/img/red_arr.png" height="28" width="28" class="blue_arr"/></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="large-3 small-12 columns area_wrapper">
-        <div id="banner_area_3">
-            <div class="banner_title">
-                <h3>פעילות פלמנטרית</h3>
-                <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק בתיק התיירות
-                    ותיק קשרי החוץ בעיריית ירושלים.</p>
-                <a href="#"><img src="../assets/img/blue_arr.png" height="28" width="28" class="blue_arr"/></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="large-3 small-12 columns area_wrapper">
-        <div id="banner_area_2">
-            <div class="banner_title">
-                <h3>פעילות פלמנטרית</h3>
-                <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק בתיק התיירות
-                    ותיק קשרי החוץ בעיריית ירושלים.</p>
-                <a href="#"><img src="../assets/img/red_arr.png" height="28" width="28" class="blue_arr"/></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="large-3 small-12 columns area_wrapper">
-        <div id="banner_area_1">
-            <div class="banner_title">
-                <h3>פעילות פלמנטרית</h3>
-                <p>שימש בעבר כחבר מועצת העיר ירושלים מטעם סיעת ירושלים תצליח של ראש העיר ניר ברקת, והחזיק בתיק התיירות
-                    ותיק קשרי החוץ בעיריית ירושלים.</p>
-                <a href="#"><img src="../assets/img/blue_arr.png" height="28" width="28" class="blue_arr"/></a>
-            </div>
-        </div>
-    </div>
-
-</div>
-<!--end banners line-->
-<!--news letters-->
-<div class="row expanded">
-    <div class="large-4 small-12 large-offset-4 columns newsletters ">
-    <h2>הירשמו לחדשות שלנו</h2>
-    <div class="input-group">
-        <span class="input-group-label">דוא”ל</span>
-        <input class="input-group-field" type="number">
-        <div class="input-group-button">
-            <input type="submit" class="button" value="שלח" id="n_btn">
-        </div>
-    </div>
-    </div>
-</div>
-<!--endnews letters-->
-<!--footer-->
-<div class="row expanded footer">
-    <div class="row">
-    <div class="large-3 columns">
-        <h4>צרו קשר</h4>
-        <div class="line_wr"></div>
-        <form action="">
-            <input type="text" placeholder="שם:">
-            <input type="text" placeholder="דוא”ל:">
-            <textarea type="text" placeholder="הודעה:" id="txtr"></textarea>
-            <input type="submit" class="button" value="שלח" id="f_btn">
-
-        </form>
-    </div>
-    <div class="large-3 hide-for-small-only columns">
-        <h4>תמונות</h4>
-        <div class="line_wr"></div>
-
-        <div class="pictures">
-            <div class="row">
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-                <div class="large-4 columns def_pic"></div>
-            </div>
-        </div>
-    </div>
-    <div class="large-3 hide-for-small-only columns">
-        <h4>תפריט</h4>
-        <div class="line_wr"></div>
-        <ul class="menu vertical f_menu" role="menu">
-            <li><a href="index.html">דף הבית</a></li>
-            <li class="divider"></li>
-            <li><a href="about.html">מי אני</a></li>
-            <li class="divider"></li>
-            <li><a href="speeches.html">נאומים</a></li>
-            <li class="divider"></li>
-            <li><a href="articles.html">מאמרים</a></li>
-            <li class="divider"></li>
-            <li><a href="articles.html">מדיני והסברה</a></li>
-            <li class="divider"></li>
-            <li><a href="communication.html">תקשורת</a></li>
-            <li class="divider"></li>
-            <li><a href="communication.html">כנסת</a></li>
-            <li class="divider"></li>
-            <li><a href="contact.html">צור קשר</a></li>
-        </ul>
-
-    </div>
-    <div class="large-3 columns ">
-        <img id="f-logo" src="../assets/img/bottom_logo.png" height="136" width="264"/>
-    </div>
-    </div>
-</div>
-
-<div class="row expanded bottom_line">
-    <div class="row">
-        <div class="large-12 small-12 columns">
-            <a href="#"><img id="tvuna" src="../assets/img/tvuna_logo.png" height="52" width="212"/></a>
+            <!--end_off_canvas-->
         </div>
     </div>
 </div>
-<!--end footer-->
-
-
+<!--end_off_canvas-->
 
 
 
