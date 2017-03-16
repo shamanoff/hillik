@@ -4,6 +4,23 @@ $red: #a51619;
 $gray_bg: #e6e6e6;
 $blue: #0d4680;
 $black: #141414;
+
+@font-face {
+  font-family: 'TrampolinaRegular';
+  src: url('../fonts/TrampolinaRegular_0.eot');
+  src: local(''), url('../fonts/TrampolinaRegular_0.woff') format('woff'), url('../fonts/TrampolinaRegular_0.ttf') format('truetype'), url('../fonts/TrampolinaRegular_0.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TrampolinaBlack';
+  src: url('../fonts/TrampolinaBlack_0.eot');
+  src: local(''), url('../fonts/TrampolinaBlack_0.woff') format('woff'), url('../fonts/TrampolinaBlack_0.ttf') format('truetype'), url('../fonts/TrampolinaBlack_0.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html{
 
   padding:0;
@@ -15,6 +32,7 @@ body{
   padding:0;
   margin:0;
   //min-width:630px;
+  background-color: $gray_bg;
 
 }
 
@@ -23,12 +41,14 @@ body{
   height: 1rem;
   background-color: $gray_bg;
 }
+
+.top_wrapper{
+  background-color: #fff;
+}
 @media screen and (min-width: 1024px) {
   .mobile_top{
     display: none;
   }
-
-
 
 }
 //medium
@@ -40,6 +60,7 @@ body{
   .mobile_top{
     height:auto;
     max-height: 70px;
+    background-color: #fff;
 
   }
 
@@ -73,6 +94,7 @@ body{
   .mobile_top{
     height:auto;
     max-height: 70px;
+    background-color: #fff;
 
   }
 
@@ -101,7 +123,7 @@ body{
 
 .offcanvas_menu li a{
   color: #fff;
-  font-family:Trampolina, serif;
+  font-family:TrampolinaRegular, serif;
   font-size:1.2rem;
   line-height:1.5rem;
 }
@@ -121,24 +143,7 @@ body{
 }
 
 
-/*@media screen and (max-width: 640px) {
-  .logo_bar {
-    width:20%;
-    height: auto;
-  }
-  .logo_avoda {
-    width:20%;
-    height: auto;
-    float: left;
-    position: relative;
-  }
-  .top-bar-right .top-bar-left{
-    width:auto;
-  }
 
-
-
-}*/
 
 .top-bar {
   //padding: 0px 15px 0px 15px;
@@ -151,13 +156,13 @@ body{
 }
 
 .menu {
-  font-family: Trampolina, serif;
-  font-weight: bold;
+  font-family: TrampolinaRegular, serif;
+  //font-weight: bold;
   color: $blue;
   font-size: 1.1rem;
 }
 
-.menu .active a {
+.active{
   background: #ffffff;
   color: $red;
   border-bottom: 7px solid $red;
@@ -167,13 +172,14 @@ body{
   margin: 24px 0px 0px 0px;
   padding: 0px;
   width: 730px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1199px) {
 
   .menu {
-    font-family: Trampolina, serif;
-    font-weight: bold;
+    font-family: TrampolinaRegular, serif;
+    //font-weight: bold;
     color: $blue;
     font-size: 1rem;
   }
@@ -182,6 +188,7 @@ body{
     margin: 9px 0px 0px 0px;
     padding: 0px;
     width: 550px;
+    background-color: #fff;
   }
 }
 
@@ -242,14 +249,14 @@ body{
   padding-top: 0.6rem;
   background-color: $blue;
   color: #ffffff;
-  font-family: Trampolina, serif;;
+  font-family: TrampolinaRegular, serif;;
   height: 70px;
 
 }
 
 .news p {
   margin-top: 0.8rem;
-  font-family: Trampolina, serif;
+  font-family: TrampolinaRegular, serif;
   padding: 0;
   margin-bottom: 0;
 }
@@ -298,12 +305,12 @@ body{
 .big_pic_title span {
   padding: 5px;
   background-color: $red;
-  font-family: Trampolina, serif;
+  font-family: TrampolinaRegular, serif;
 }
 
 .big_pic_title h2 {
-  font-weight: 900;
-  font-family: Trampolina, serif;
+  //font-weight: 900;
+  font-family: TrampolinaBlack, serif;
   line-height: 2.5rem;
   margin-top: 1rem;
 }
@@ -330,10 +337,11 @@ body{
 
 .small_pic {
   border-top: 7px solid $red;
-  padding: 120px 20px 5px 20px;
+  padding: 110px 20px 0px 20px;
   float: right;
   position: relative;
   margin: 0px 0px 30px 0px;
+  min-height: 12.7rem;
 
 }
 
@@ -341,15 +349,16 @@ body{
   color: #fff;
   padding: 5px;
   background-color: $red;
-  font-family: Trampolina, serif;
+  font-family: TrampolinaRegular, serif;
 }
 
 .small_pic_title p {
+  margin-top:15px;
   padding: 0;
   color: $black;
-  font-weight: 900;
-  font-family: Trampolina, serif;
-  line-height: 2.5rem;
+  //font-weight: 900;
+  font-family: TrampolinaRegular, serif;
+  line-height: 1.2rem;
   background-color: #fff;
   //margin-top: 1rem;
 }
@@ -360,11 +369,11 @@ body{
   color: #fff;
   padding: 30% 1rem 1rem 1rem;
   h3 {
-    font-family: Trampolina, serif;
-    font-weight: 900;
+    font-family: TrampolinaBlack, serif;
+    //font-weight: 900;
   }
   p {
-    font-family: Trampolina, serif;
+    font-family: TrampolinaRegular, serif;
     line-height:1.5rem;
 
   }
@@ -422,17 +431,20 @@ $hb: auto;
   background-color: #fff;
 
 }
+.newsletters_wrapper{
+  background-color: #fff;
+}
 .input-group #n_btn{
   background-color: $red;
   width:6rem;
-  font-family:"Trampolina Black", serif;
-  font-weight:900;
+  font-family:TrampolinaBlack, serif;
+  //font-weight:900;
   font-size:1.5rem;
 
 }
 .newsletters h2{
-  font-family:"Trampolina Black", serif;
-  font-weight:900;
+  font-family:TrampolinaBlack, serif;
+  //font-weight:900;
   color: $blue;
 }
 
@@ -461,8 +473,8 @@ $hb: auto;
   height:2.5rem;
   background-color: $red;
   font-size:1.5rem;
-  font-weight:900;
-  font-family:Trampolina, serif;
+  //font-weight:900;
+  font-family:TrampolinaBlack, serif;
   padding:0;
 
 }
@@ -487,7 +499,7 @@ $hb: auto;
 
 .f_menu li a{
   color: #fff;
-  font-family:Trampolina, serif;
+  font-family:TrampolinaRegular, serif;
   font-size:1rem;
   line-height:.5rem;
 }
@@ -500,3 +512,112 @@ $hb: auto;
   float: left;
 }
 //end footer
+
+//END OF HOME PAGE
+
+//About
+
+//banner
+.banner_ip{
+  margin-top:46px;
+  padding: 0 3rem 0 0px;
+  height: 434px;
+  //width: 570px;
+  border-top: 7px solid $red;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 48%, rgba(13,70,128,1) 100%),url("../img/ip_b_1.png");
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 48%,rgba(13,70,128,1) 100%),url("../img/ip_b_1.png");
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 48%,rgba(13,70,128,1) 100%),url("../img/ip_b_1.png");
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#0d4680',GradientType=0 );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.banner_ip_title{
+  margin-top:25%;
+  padding-right:1rem;
+  color: #fff;
+  border-right: 7px solid $red;
+}
+.icon{
+  float: left;
+  position: relative;
+  margin-top:5px;
+}
+.icon_set{
+  float: left;
+  position: relative;
+
+}
+.banner_ip_title h2{
+  color: #fff;
+  font-family: TrampolinaBlack, serif;
+  line-height:2.5rem;
+
+}
+//end of banner
+
+//a side
+.side_a{
+  background-color: $blue;
+  padding:1rem;
+  margin-top:46px;
+  margin-bottom:46px;
+}
+.aside_menu a{
+  font-family:TrampolinaBlack, serif;
+  color: #fff;
+  font-size:1.5rem;
+  line-height: 1rem;
+  margin-bottom:3rem;
+}
+
+.wrapper_side{
+  background-color: #306aa6;
+  height:6rem;
+  margin-top:1rem;
+  margin-bottom:2rem;
+  padding:1rem;
+  h4 a{
+    color: #fff;
+    font-family:TrampolinaBlack, serif;
+  }
+  .tt{
+    float: right;
+    position: relative;
+    margin-top:.9rem;
+  }
+  .mm{
+    float: right;
+    position: relative;
+    margin-left:1rem;
+  }
+}
+//end of a side
+
+//b side
+.side_b{
+  background-color: #fff;
+  padding: 2rem;
+  margin: 46px 0 46px 0px;
+  p{
+    font-family:TrampolinaRegular, serif;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $black;
+  }
+  h3{
+    font-family:TrampolinaBlack, serif;
+    line-height: 1.8rem;
+    color: $black;
+  }
+  .citute{
+    font-family:TrampolinaBlack, serif;
+    font-size:2.3rem;
+    line-height: 2.6rem;
+    color: #9c9c9c;
+    padding:2rem 8rem 2rem 0px;
+
+  }
+
+}
+//end of b side

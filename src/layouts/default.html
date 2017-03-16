@@ -11,27 +11,17 @@
   </head>
   <body>
 
+    {{> header}}
+    <!-- Header up here -->
+
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
+    <!-- Footer down here -->
+    {{> footer}}
+
 
     <script src="{{root}}assets/js/app.js"></script>
-<!--    <script>
-        var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: true,
 
-            // If we need pagination
-            pagination: '.swiper-pagination',
-
-            // Navigation arrows
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-
-            // And if we need scrollbar
-            scrollbar: '.swiper-scrollbar',
-        })
-    </script>-->
   </body>
 </html>
