@@ -23,7 +23,7 @@ $black: #141414;
 
 html{
 
-  padding:0;
+  //padding:0;
 
 }
 body{
@@ -292,7 +292,6 @@ body{
   padding: 0 20px 20px 20px;
   margin-top: 249px;
   min-height: 170px;
-  color: #ffffff;
 
 
 }
@@ -301,13 +300,17 @@ body{
   margin-right: 95%;
 }
 
-.big_pic_title span {
+.big_pic_title span   {
+  color: #ffffff;
+
   padding: 5px;
   background-color: $red;
   font-family: TrampolinaRegular, serif;
 }
 
-.big_pic_title h2 {
+.big_pic_title h2  {
+  color: #ffffff;
+
   font-family: TrampolinaBlack, serif;
   line-height: 2.5rem;
   margin-top: 1rem;
@@ -324,23 +327,21 @@ body{
   background-size: contain;
   background-position: top;
   background-color: #ffffff;
-}
 
-.small_wrapper_column {
-  padding: 0 20px 0 0;
-
-}
-
-.small_pic {
   border-top: 7px solid $red;
   padding: 110px 20px 0px 0px;
   float: right;
   position: relative;
   margin: 0px 0px 30px 0px;
   min-height: 12.7rem;
-  width:270px;
+  width:100%;
+}
+
+.small_wrapper_column {
+  //padding: 0 0 0 0;
 
 }
+
 
 .small_pic_title span {
   color: #fff;
@@ -363,13 +364,15 @@ body{
 
 //banners line
 .banner_title {
-  color: #fff;
+
   padding: 30% 1rem 1rem 1rem;
   h3 {
+    color: #fff;
     font-family: TrampolinaBlack, serif;
     //font-weight: 900;
   }
   p {
+    color: #fff;
     font-family: TrampolinaRegular, serif;
     line-height:1.5rem;
 
@@ -516,7 +519,7 @@ $hb: auto;
 
 //banner
 .banner_ip{
-  margin:46px 15px 0 15px;
+  margin:46px 0px 0 0px;
   padding: 0 3rem 0 0px;
   min-height: 434px;
   //width: 570px;
@@ -530,7 +533,7 @@ $hb: auto;
   background-size: cover;
 }
 .banner_ip_title{
-  margin-top:25%;
+  margin-top:15rem;
   padding-right:1rem;
   color: #fff;
   border-right: 7px solid $red;
@@ -554,18 +557,21 @@ $hb: auto;
 //end of banner
 
 //a side
+
 .side_a{
   background-color: $blue;
   padding:1rem;
   margin-top:46px;
   margin-bottom:46px;
+  border-top: 7px solid $red;
+
 }
 .aside_menu a{
   font-family:TrampolinaBlack, serif;
   color: #fff;
   font-size:1.5rem;
-  line-height: 1rem;
-  margin-bottom:3rem;
+  line-height: .5rem;
+  margin-bottom:1rem;
 }
 
 .wrapper_side{
