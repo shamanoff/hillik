@@ -4,10 +4,10 @@
         <div class="large-3 medium-6 columns">
             <h4>צרו קשר</h4>
             <div class="line_wr"></div>
-            <form action="">
-                <input type="text" placeholder="שם:">
-                <input type="text" placeholder="דוא”ל:">
-                <textarea type="text" placeholder="הודעה:" id="txtr"></textarea>
+            <form action="" role="form" tabindex="6">
+                <input type="text" placeholder="שם:" aria-required="true" required aria-labelledby="שם מלא">
+                <input type="text" placeholder="דוא”ל:" aria-required="true" required aria-labelledby="דוא”ל">
+                <textarea type="text" placeholder="הודעה:" id="txtr" aria-required="true" required  aria-labelledby="הודעה"></textarea>
                 <input type="submit" class="button" value="שלח" id="f_btn">
 
             </form>
@@ -34,7 +34,7 @@
         <div class="large-3 medium-6 hide-for-small-only columns">
             <h4>תפריט</h4>
             <div class="line_wr"></div>
-            <ul class="menu vertical f_menu" role="menu">
+            <ul class="menu vertical f_menu" role="menu" tabindex="7">
                 <li><a href="index.html">דף הבית</a></li>
                 <li class="divider"></li>
                 <li><a href="about.html">מי אני</a></li>
@@ -55,7 +55,7 @@
 
         </div>
         <div class="large-3 medium-6 columns ">
-            <img id="f-logo" src="../assets/img/bottom_logo.png" height="136" width="264"/>
+            <img alt="Hillik Bar logo" id="f-logo" src="../assets/img/bottom_logo.png" height="136" width="264"/>
         </div>
     </div>
 </div>
@@ -63,7 +63,7 @@
 <div class="row expanded bottom_line">
     <div class="row">
         <div class="large-12 small-12 columns">
-            <a href="#"><img id="tvuna" src="../assets/img/tvuna_logo.png" height="52" width="212"/></a>
+            <a href="#"><img alt="Tvuna logo" id="tvuna" src="../assets/img/tvuna_logo.png" height="52" width="212"/></a>
         </div>
     </div>
 </div>
