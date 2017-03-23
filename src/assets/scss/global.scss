@@ -36,8 +36,41 @@ body {
   background-color: $gray_bg;
 
 }
+.offcanvas_menu{
+  margin-top:2rem;
 
+}
+.offcanvas_menu li a {
+  color: #fff;
+  font-family: TrampolinaRegular, serif;
+  font-size: 1rem;
+  line-height: .1rem;
+
+}
+.close-button:hover{
+  color: #fff;
+}
+.close-button  {
+  float: left;
+  position: relative;
+  color: #fff;
+
+
+}
+
+#offCanvas {
+  background-color: $blue;
+  padding: 0 2rem 0 2rem;
+
+}
+
+#in_off_logo{
+  margin-top:30%;
+}
 //header
+#nav a{
+  color: $blue;
+}
 .line {
   height: 1rem;
   background-color: $gray_bg;
@@ -122,25 +155,6 @@ body {
 
 }
 
-.offcanvas_menu li a {
-  color: #fff;
-  font-family: TrampolinaRegular, serif;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-
-.close-button {
-  float: left;
-  position: relative;
-  color: #fff;
-
-}
-
-#offCanvas {
-  background-color: $blue;
-  padding: 2rem;
-
-}
 
 .top-bar {
   //padding: 0px 15px 0px 15px;
@@ -307,6 +321,7 @@ body {
   font-family: TrampolinaBlack, serif;
   line-height: 2.5rem;
   margin-top: 1rem;
+  font-size:2.5rem;
 }
 
 .small_pic {
@@ -357,11 +372,13 @@ body {
 
 //banners line
 .banner_title {
-
   padding: 30% 1rem 1rem 1rem;
+
   h3 {
     color: #fff;
     font-family: TrampolinaBlack, serif;
+    font-size:2rem;
+    line-height:2rem;
     //font-weight: 900;
   }
   p {
@@ -375,6 +392,8 @@ body {
 .area_wrapper {
   padding: 0;
   margin: 0;
+  //min-height:290px;
+
 
 }
 
@@ -639,6 +658,7 @@ $hb: auto;
   h4 {
     color: #fff;
     font-family: TrampolinaBlack, serif;
+    font-size:1.5rem;
   }
   .tt {
     //float: right;
@@ -664,11 +684,13 @@ $hb: auto;
     font-size: 1.1rem;
     line-height: 1.5rem;
     color: $black;
+    margin-top:1rem;
   }
   h3 {
     font-family: TrampolinaBlack, serif;
     line-height: 1.8rem;
     color: $black;
+    font-size:2rem;
   }
   .citute {
     font-family: TrampolinaBlack, serif;
@@ -715,10 +737,11 @@ $hb: auto;
   background-color: #fff;
   min-height: 434px;
 
-  h3 {
+  h4 {
     font-family: TrampolinaBlack, serif;
     color: $black;
     line-height: 2rem;
+    font-size:2rem;
   }
 
 }
@@ -743,7 +766,7 @@ $hb: auto;
 //box
 
 .box {
-  min-height: 265px;
+  min-height: 240px;
   //max-height:265px;
   margin-bottom: 2rem;
   background-color: #fff;
@@ -753,11 +776,12 @@ $hb: auto;
     font-family: TrampolinaBlack, serif;
     color: $black;
     line-height: 2rem;
+    font-size:2rem;
   }
 
   .pp_box {
     font-family: TrampolinaRegular, serif;
-    max-height: 220px;
+    max-height: 100px;
     overflow: hidden;
     font-size: 1.1rem;
     line-height: 1.5rem;
@@ -773,7 +797,7 @@ $hb: auto;
   color: $black;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   //width:70%;
   //float: left;
 }
@@ -781,3 +805,201 @@ $hb: auto;
 //end box
 
 //END OF SPEECHES PAGE
+
+//CONTACT PAGE
+@media screen and (min-width: 640px) {
+  .banner_ip_contact {
+    margin: 46px 0px 0 0px;
+    padding: 0 3rem 0 0px;
+    min-height: 434px;
+    //width: 570px;
+    border-top: 7px solid $red;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 48%, rgba(13, 70, 128, 1) 100%), url("../img/banner_knesset.png");
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 48%, rgba(13, 70, 128, 1) 100%), url("../img/banner_knesset.png");
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 48%, rgba(13, 70, 128, 1) 100%), url("../img/banner_knesset.png");
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#0d4680', GradientType=0);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .banner_ip_title {
+    margin-top: 18rem;
+    color: #fff;
+  }
+  .red_line {
+    border-right: 7px solid $red;
+    padding-right: 1rem;
+    //position: relative;
+    //top: 10%;
+    //transform: translateY(-10%);
+
+  }
+  .icon {
+    float: left;
+    position: relative;
+    margin-top: 5px;
+  }
+  .icon_set {
+    float: left;
+    position: relative;
+
+  }
+  .banner_ip_title h2 {
+    color: #fff;
+    font-family: TrampolinaBlack, serif;
+    line-height: 2.5rem;
+
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+  .banner_ip_contact {
+    margin: 46px 0px 0 0px;
+    padding: 0 1rem 0 0px;
+    min-height: 300px;
+    //width: 570px;
+    border-top: 7px solid $red;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 48%, rgba(13, 70, 128, 1) 100%), url("../img/banner_knesset.png");
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 48%, rgba(13, 70, 128, 1) 100%), url("../img/banner_knesset.png");
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 48%, rgba(13, 70, 128, 1) 100%), url("../img/banner_knesset.png");
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#0d4680', GradientType=0);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .banner_ip_title {
+    margin-top: 10rem;
+    padding-right: .5rem;
+    color: #fff;
+    border-right: 7px solid $red;
+  }
+  .icon {
+    float: left;
+    position: relative;
+    margin-top: 5px;
+  }
+  .icon_set {
+    float: left;
+    position: relative;
+
+  }
+  .banner_ip_title h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: TrampolinaBlack, serif;
+    line-height: 2.5rem;
+
+  }
+
+}
+
+//form
+#send{
+  width:100%;
+  font-family:TrampolinaBlack, serif;
+  font-size:1.5rem;
+  margin:1rem 0 1rem 0;
+
+}
+
+@media screen and (min-width: 880px) {
+  #form {
+    padding: 2rem 4rem 2rem 4rem;
+    textarea {
+      height: 8rem;
+    }
+    label {
+      font-family: TrampolinaRegular, serif;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 879px) {
+  #form {
+    padding: .5rem;
+    textarea {
+      height: 8rem;
+    }
+    label {
+      font-family: TrampolinaRegular, serif;
+      font-size: 1.1rem;
+    }
+  }
+}
+//end of form
+
+//contact
+.contact_detail{
+  text-align: center;
+  h4{
+    font-family:TrampolinaRegular, serif;
+    color: #fff;
+  }
+  p{
+    font-family:TrampolinaRegular, serif;
+    color: #fff;
+  }
+}
+//end of contact
+
+//END OF CONTACT PAGE
+
+//GALLERY PAGE
+
+.gallery_row{
+  margin-bottom:3rem;
+}
+@media screen and (min-width: 640px) {
+  .gallery_title {
+    padding-right: .5rem;
+    padding-left: 1.5rem;
+    color: $black;
+    h2 {
+      font-family: TrampolinaBlack, serif;
+
+    }
+    margin-bottom: 2rem;
+
+  }
+}
+@media screen and (max-width: 639px) {
+  .gallery_title {
+    padding-right: .5rem;
+    padding-left: 1rem;
+    color: $black;
+    h2 {
+      font-family: TrampolinaBlack, serif;
+      font-size:2rem;
+      border-right: solid $red 7px;
+      padding-right:1rem;
+    }
+    margin-bottom: 2rem;
+
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .gallery_bg {
+    background-color: #fff;
+    padding:2rem 3rem 2rem 2rem;
+    margin-top:46px;
+    margin-bottom:46px;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  .gallery_bg {
+    background-color: #fff;
+    padding:1rem;
+    margin-top:46px;
+    margin-bottom:46px;
+  }
+}
+
+.num{
+  text-align: center;
+}
+
+//END OF GALLERY PAGE
